@@ -2,11 +2,10 @@ const express = require("express");
 
 const router = express.Router();
 
-const sayHello = (req, res) => {
-  res.send("Welcome to wild series !")
-}
+const { sayWelcome } = require("../../controllers/sayAction")
 
-router.get("/", sayHello)
+
+router.get("/", sayWelcome)
 
 /* ************************************************************************* */
 // Import And Use Routers Here
