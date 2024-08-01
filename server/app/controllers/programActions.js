@@ -47,8 +47,6 @@ const read = (req, res) => {
     res.sendStatus(404);
   }
 
-
-
 };
 
 // Export it to import it somewhere else
